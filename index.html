@@ -10,6 +10,7 @@
 
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/header.css" rel="stylesheet" />
+        <link href="css/footer.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
@@ -18,22 +19,41 @@
                 <div class="logo">
                     <p>Hoang Long</p>
                 </div>
+                <nav>
+                    <ul class="nav__list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Truc</a></li>
+                        <li><a href="#">Muche</a></li>
+                    </ul>
+                </nav>
+                <!-- menu burger -->
                 <div class="burger-icon">
                     <i class="fa-solid fa-bars" id="burger"></i>
                 </div>
-                <ul class="menu" id="menu">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <div class="menu" id="menu_nav">
+                    <i class="fa-solid fa-xmark" id="xmark-close-menu"></i>
+                    <div class="menu__list-container">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">À propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Truc</a></li>
+                            <li><a href="#">Muche</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- fin menu burger -->
             </div>
         </header>
         <main>
             <p>Caca boudin</p>
         </main>
         <footer>
-
+            &copy; 2024 Hoang Long Pham
         </footer>
 
         <script src="script/script.js"></script>

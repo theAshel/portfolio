@@ -12,18 +12,70 @@ header {
     align-items: center;
     height: 100%;
 }
-
-.menu {
+nav {
     display: none;
+}
+
+@media (min-width: 900px) {
+    nav {
+        display: flex;
+            margin-left: auto;
+    }
+
+    .nav__list {
+        display: flex;
+        font-size: 1.3rem;
+        margin-left: auto;
+        gap: 20px;
+    }
+
+    #burger {
+        display: none;
+    }
+}
+
+/* menu burger */
+.menu {
+    display: flex;
     flex-direction: column;
     background-color: aquamarine;
     position: fixed;
+    padding: 20px;
     right: 0;
-    width: 10rem;
+    width: 350px;
     height: 100vh;
     top: 0;
+    transition: transform 0.6s ease; /* Animation de transition pour un effet fluide */
+    transform: translateX(100%); /* Le menu est caché à droite */
+    z-index: 1000;
 }
 
 .menu.active {
-    display: flex;
+    transform: translateX(0);
 }
+
+@media (max-width: 350px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+#xmark-close-menu {
+    margin-left: auto;
+    font-size: 3rem;
+}
+
+.menu__list-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list-container > ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+/* fin menu burger */
