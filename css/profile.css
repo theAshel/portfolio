@@ -1,0 +1,24 @@
+.profile__section {
+    height: calc(100vh - 100px);
+    background-color: bisque;
+    width: 100%;
+    padding: 50px;
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-picture {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+@media  (max-width: 420px) {
+    #main-picture {
+        width: 200px;
+        height: 200px;
+    }
+}

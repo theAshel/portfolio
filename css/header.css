@@ -19,7 +19,7 @@ nav {
 @media (min-width: 900px) {
     nav {
         display: flex;
-            margin-left: auto;
+        margin-left: auto;
     }
 
     .nav__list {
@@ -45,7 +45,7 @@ nav {
     width: 350px;
     height: 100vh;
     top: 0;
-    transition: transform 0.6s ease; /* Animation de transition pour un effet fluide */
+    transition: transform 0.6s ease;
     transform: translateX(100%); /* Le menu est caché à droite */
     z-index: 1000;
 }
