@@ -23,7 +23,7 @@
     }
 }
 
-@media  (max-height: 800px) {
+@media  (max-height: 750px) {
     #main-picture {
         width: 150px;
         height: 150px;
@@ -50,11 +50,13 @@
 
 .profile__description {
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 .profile__status {
     font-size: 0.8rem;
     font-style: italic;
+    line-height: 1.4;
 }
 
 .download-cv__button {

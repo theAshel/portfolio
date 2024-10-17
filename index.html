@@ -13,6 +13,7 @@
         <link href="assets/css/header.css" rel="stylesheet" />
         <link href="assets/css/footer.css" rel="stylesheet" />
         <link href="assets/css/profile.css" rel="stylesheet" />
+        <link href="assets/css/about.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
@@ -23,10 +24,10 @@
                 </div>
                 <nav>
                     <ul class="nav__list">
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">À propos</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#profile">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#">Machin</a></li>
+                        <li><a href="#">Bidule</a></li>
                         <li><a href="#">Truc</a></li>
                         <li><a href="#">Muche</a></li>
                     </ul>
@@ -39,10 +40,10 @@
                     <i class="fa-solid fa-xmark" id="xmark-close-menu"></i>
                     <div class="menu__list-container">
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">À propos</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#profile">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#">Machin</a></li>
+                            <li><a href="#">Bidule</a></li>
                             <li><a href="#">Truc</a></li>
                             <li><a href="#">Muche</a></li>
                         </ul>
@@ -52,9 +53,9 @@
             </div>
         </header>
         <main>
-            <section class="profile__section">
+            <section class="profile__section" id="profile">
                 <div class="profile__content">
-                    <img src="assets/img/photo_placeholder.jpg" id="main-picture" alt="My picture" />
+                    <img src="assets/img/chad.jpg" id="main-picture" alt="My picture" />
                     <span class="profile__pre-name">Salut, je suis</span>
                     <h1 class="profile__name">Hoang Long Pham.</h1>
                     <h2 class="profile__title">Étudiant en 2e année de BUT Informatique.</h2>
@@ -63,22 +64,25 @@
                     <button class="download-cv__button">Télécharger mon CV</button>
                 </div>
             </section>
-            <section class="about__section">
-                <h2>À propos de moi</h2>
-                <p>
+            <section class="about__section" id="about">
+                <h2 class="about__title">À propos de moi</h2>
+                <p class="about__paragraph">
                     Salut ! Je m'appelle Hoang Long Pham et j'ai 22 ans. Je suis étudiant en 2e année de BUT Informatique à l'IUT de Reims.
+                </p>
+                <p class="about__paragraph">
                     J'ai débuté mes études supérieures par une Licence de Mathématiques à l'URCA, où j'ai découvert la programmation.
                     Cette discipline a éveillé ma curiosité, car elle me demande à la fois d'être logique pour résoudre des problèmes et créatif pour concevoir de nouvelles idées.
                     Finalement, j'ai décidé de me réorienter vers l'informatique, et aujourd'hui, je suis passionné par le développement et les nouvelles technologies.
                 </p>
-                <p>
+                <p class="about__paragraph">
                     En dehors de l'informatique, j'adore faire plein de choses comme jouer de l'instrument ! J'ai pratiqué 8 ans de piano et 6 ans de saxophone
                     au CRD de Charleville-Mézières. Je suis également fan de jeux vidéo : jeux compétitifs, jeux solo, j'aime le multigaming.
                 </p>
             </section>
         </main>
         <footer>
-            &copy; 2024 Hoang Long Pham
+            <p class="footer__copyright">&copy; 2024 - Hoang Long Pham</p>
+            <p class="footer_info">Site concu par Hoang Long Pham, uniquement en HTML, CSS et JavaScript vanilla.</p>
         </footer>
 
         <script src="assets/script/burger.js"></script>
