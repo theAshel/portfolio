@@ -1,8 +1,10 @@
 header {
     background-color: rgb(82, 82, 82);
     height: 100px;
+    width: 100vw;
     padding: 20px;
     font-size: 2rem;
+    position: fixed;
 }
 
 .navbar {

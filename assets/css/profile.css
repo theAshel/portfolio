@@ -1,5 +1,5 @@
 .profile__section {
-    height: calc(100vh - 100px);
+    height: 100vh;
     background-color: bisque;
     width: 100%;
     padding: 50px;
