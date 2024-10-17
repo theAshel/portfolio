@@ -1,11 +1,10 @@
 .profile__section {
-    height: 100vh;
+    min-height: 100vh;
     background-color: bisque;
     width: 100%;
-    padding: 50px;
-    padding-top: 180px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 #main-picture {
@@ -14,6 +13,7 @@
     border-radius: 50%;
     width: 250px;
     height: 250px;
+    margin-bottom: 20px;
 }
 
 @media  (max-width: 420px) {
@@ -21,4 +21,47 @@
         width: 200px;
         height: 200px;
     }
+}
+
+@media  (max-height: 800px) {
+    #main-picture {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 70px;
+}
+.profile__pre-name {
+    font-size: 1rem;
+}
+
+.profile__name {
+    font-size: 2rem;
+}
+
+.profile__title {
+    font-size: 1.2rem;
+}
+
+.profile__description {
+    font-size: 1rem;
+}
+
+.profile__status {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.download-cv__button {
+    background: none;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 7px 30px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
 }
