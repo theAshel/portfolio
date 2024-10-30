@@ -1,0 +1,43 @@
+.resume__section {
+    background-color: rgb(209, 238, 247);
+    padding: 60px 20px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume__title {
+    font-size: 1.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.resume__data {
+}
+
+.resume__category {
+    font-size: 1.6rem;
+}
+
+.resume__item {
+    padding-left: 20px;
+    position: relative;
+    border-left: 1px solid black;
+}
+
+.resume__item:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.resume__item::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #1c1a1a;
+    left: -0.5rem;
+    background-color: black;
+}

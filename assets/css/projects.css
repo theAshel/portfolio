@@ -52,7 +52,6 @@
     flex: 2;
     display: flex;
     gap: 15px;
-    overflow: visible;
     flex-wrap: wrap;
 }
 
