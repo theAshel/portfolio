@@ -1,7 +1,6 @@
 .projects__section {
     background-color: rgb(209, 0, 0);
     padding: 60px 20px;
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
