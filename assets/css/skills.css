@@ -1,12 +1,16 @@
 .skills__section {
-    background-color: rgb(79, 204, 75);
+    background-color: #e2e8f0;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    position: relative;
+    z-index: 8;
 }
 
 .skills__title {
+    font-family: 'Righteous', sans-serif;
     font-size: 1.9rem;
     margin-left: auto;
     margin-right: auto;
@@ -14,6 +18,8 @@
 }
 
 .skill__category-title {
+    color: #4E6EFF;
+    text-shadow: 0 0 1px #4E6EFF, 0 0 2px #4E6EFF, 0 0 4px #A66CFF;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4rem;
@@ -23,8 +29,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
-    background-color: azure;
+    background-color: rgb(232, 241, 247);
+    gap: 25px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: 20px;
 }
+
+.skills__container:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+
 .skill {
     display: flex;
     flex-direction: column;
@@ -38,4 +53,5 @@
 .skill__logo {
     width: 84px;
     height: 84px;
+    border-radius: 7px;
 }

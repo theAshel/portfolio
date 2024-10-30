@@ -9,8 +9,7 @@ Welcome to the Git repository of my portfolio! This project showcases my technic
 
 ## Progression
 
-Currently doing HTML Structure and CSS.  
-CSS is currently only mobile-first written, tablet and desktop display may not be good.
+Currently and CSS design for mobile. Tablet and Desktop display is yet to do.
 
 ## Stack
 
@@ -22,5 +21,5 @@ CSS is currently only mobile-first written, tablet and desktop display may not b
 - **About me** : More details about myself : Where I study and what I like.
 - **Skills** : All languages and tools I've learned.
 - **Projects** : All the projects I did.
-- **Education** : All the schools I attended. _(to do)_
-- **Contact** : My contact info. _(to do)_
+- **Resume** : All the schools and companies I attended.
+- **Contact** : My contact info.

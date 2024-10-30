@@ -7,8 +7,9 @@ footer {
     padding: 50px;
     gap: 40px;
     position: relative;
-    z-index: 5;
+    z-index: 6;
     bottom: -100vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .footer__copyright {

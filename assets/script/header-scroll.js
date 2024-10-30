@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 
-    if (scrollPosition > 250) {
+    if (scrollPosition > 1) {
         profileSection.classList.add('scrolled');
     } else {
         profileSection.classList.remove('scrolled');

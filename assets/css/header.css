@@ -10,7 +10,8 @@
 }
 
 .header.scrolled {
-    background-color: #08051a; /* Fond visible lorsque la page est scrollée */
+    background-color: #08051a;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .header__logo {
@@ -86,7 +87,7 @@ nav {
 .menu {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #08051a;
     position: fixed;
     padding: 20px;
     right: 0;
@@ -96,6 +97,7 @@ nav {
     transition: transform 0.6s ease;
     transform: translateX(100%); /* Le menu est caché à droite */
     z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .menu.active {
@@ -111,6 +113,16 @@ nav {
 #xmark-close-menu {
     margin-left: auto;
     font-size: 3rem;
+    color: #4E6EFF;
+    transition: 0.6s;
+    text-shadow: 
+        0 0 1px #4E6EFF,
+        0 0 9px #4E6EFF,
+        0 0 9px #A66CFF;
+}
+
+#xmark-close-menu:hover {
+    color: #dbdeeb;
 }
 
 .menu__list-container {
@@ -125,5 +137,7 @@ nav {
     text-align: center;
     flex-direction: column;
     gap: 50px;
+    color: #876cff;
+    font-size: 1.4rem;
 }
 /* fin menu burger */

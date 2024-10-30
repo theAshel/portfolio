@@ -1,12 +1,18 @@
 .about__section {
-    background-color: rgb(210, 206, 240);
+    background-color: #1B1B2F;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: #F0F0F0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    position: relative;
+    z-index: 9;
 }
 
 .about__title {
+    font-family: 'Righteous', sans-serif;
+    color: #b2bbe0;
     font-size: 1.9rem;
     margin-left: auto;
     margin-right: auto;
