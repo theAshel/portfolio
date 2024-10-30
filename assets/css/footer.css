@@ -6,6 +6,9 @@ footer {
     text-align: center;
     padding: 50px;
     gap: 40px;
+    position: relative;
+    z-index: 5;
+    bottom: -100vh;
 }
 
 .footer__copyright {
