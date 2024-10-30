@@ -1,11 +1,16 @@
-header {
-    background-color: #121212 ;
+.header {
+    background-color: transparent ;
     height: 75px;
     width: 100vw;
     padding: 20px;
     font-size: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
+    transition: 0.5s ease;
+}
+
+.header.scrolled {
+    background-color: #08051a; /* Fond visible lorsque la page est scrollée */
 }
 
 .header__logo {

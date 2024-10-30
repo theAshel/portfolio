@@ -17,8 +17,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+}
+
+.profile__section.scrolled::before {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 4;
 }
 
 #main-picture {
@@ -28,6 +33,8 @@
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
+    border: 3px solid #4E6EFF;
+    box-shadow: 0 0 4px #4E6EFF, 0 0 15px #4E6EFF, 0 0 15px #A66CFF;
 }
 
 @media  (max-width: 420px) {
@@ -51,6 +58,7 @@
     padding-top: 70px;
     position: relative;
     z-index: 2;
+    color: #dfe4fa;
 }
 .profile__pre-name {
     font-size: 1rem;
@@ -58,6 +66,11 @@
 
 .profile__name {
     font-size: 2rem;
+    color: #b9c6ff;
+    text-shadow: 
+        0 0 1px #4E6EFF,
+        0 0 6px #4E6EFF,
+        0 0 9px #A66CFF;
 }
 
 .profile__title {
@@ -67,6 +80,8 @@
 .profile__description {
     font-size: 1rem;
     line-height: 1.4;
+    color: #e7e8f5;
+    font-weight: 500;
 }
 
 .profile__status {
@@ -82,4 +97,13 @@
     padding: 7px 30px;
     font-size: 0.9rem;
     margin-top: 1rem;
+    border: 2px solid white;
+    transition: border-color 0.6s;
+}
+
+.download-cv__button:hover {
+    border: 2px solid #4e86ff;
+    color: #4e86ff;
+    transform: scale(1.05);
+    background: #4e86ff44;
 }
