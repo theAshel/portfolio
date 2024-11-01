@@ -1,6 +1,6 @@
 .profile__section {
     min-height: 100vh;
-    background-image: url('/assets/img/night-city-background.jpeg'); /* Remplace par le chemin de ton image */
+    background-image: url('/assets/img/bg/night-city-background.jpeg'); /* Remplace par le chemin de ton image */
     background-size: cover; /* Ajuste l'image pour couvrir toute la section */
     background-position: center; /* Centre l'image */
     width: 100%;
