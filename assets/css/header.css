@@ -25,10 +25,11 @@
         0 0 9px #4E6EFF,
         0 0 9px #A66CFF;
     animation: clignoter 1s infinite alternate;
+    transition: 0.3s;
 }
 
 .header__logo:hover {
-    transform: scale(1.5);
+    color: #8da2ff;
 }
 
 @keyframes clignoter {
@@ -137,7 +138,21 @@ nav {
     text-align: center;
     flex-direction: column;
     gap: 50px;
-    color: #876cff;
+    color: #dbdeeb;
     font-size: 1.4rem;
 }
+
+.menu__list-container > ul > li {
+    transition: 0.3s ease;
+}
+
+.menu__list-container > ul > li:hover {
+    text-shadow: 
+        0 0 1px #4E6EFF,
+        0 0 9px #4E6EFF,
+        0 0 9px #A66CFF;
+    color: #876cff;
+    transform: translateY(-1.5px);
+}
+
 /* fin menu burger */
