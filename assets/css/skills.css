@@ -17,6 +17,10 @@
     margin-bottom: 20px;
 }
 
+.container__skill__category-title__desktop {
+    display: none;
+}
+
 .skill__category-title {
     color: #4E6EFF;
     text-shadow: 0 0 1px #4E6EFF, 0 0 2px #4E6EFF, 0 0 4px #A66CFF;
@@ -35,8 +39,10 @@
     border-radius: 20px;
 }
 
-.skills__container:not(:last-child) {
-    margin-bottom: 50px;
+@media (max-width: 1200px) {
+    .skills__container:not(:last-child) {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -79,5 +85,62 @@
 @media (min-width: 1000px) {
     .skills__container {
         width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container__skill__category-title__desktop {
+        display: flex;
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    .skill__category-title__desktop {
+        transition: 0.4s ease;
+        font-size: 1.3rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    /* --------- soulignement du titre lorsqu'il est sélectionné --------- */
+    .skill__category-title__desktop::after { 
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 3px;
+        width: 100%;
+        background-color: #4E6EFF;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 4px rgba(78, 110, 255, 0.5), 0 0 8px rgba(78, 110, 255, 0.3);
+
+    }
+
+    .skill__category-title__desktop.active-title::after {
+        transform: scaleX(1);
+    }
+    /* --------- fin soulignement --------- */
+
+    .skill__category-title__desktop:hover {
+        color: #dbdeeb;
+        cursor: pointer;
+        transform: translateY(-1.5px);
+    }
+
+    .skill__category-title__mobile {
+        display: none;
+    }
+
+    .skills__container {
+        display: none;
+    }
+    
+    .skills__container.active {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 }

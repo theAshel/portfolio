@@ -93,8 +93,15 @@
                 </section>
                 <section class="skills__section" id="skills">
                     <h2 class="skills__title">Compétences</h2>
-                    <h3 class="skill__category-title">Développement Web</h3>
-                    <div class="skills__container">
+                    <div class="container__skill__category-title__desktop">
+                        <h3 class="skill__category-title skill__category-title__desktop active-title" onclick="afficheSkills('skills_web', this)">Développement Web</h3>
+                        <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_prog', this)">Langages de programmation</h3>
+                        <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_db', this)">Bases de données</h3>
+                        <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_sys', this)">Systèmes et Réseaux</h3>
+                        <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_tools', this)">Outils</h3>
+                    </div>
+                    <h3 class="skill__category-title skill__category-title__mobile">Développement Web</h3>
+                    <div class="skills__container skills_web active">
                         <div class="skill">
                             <img src="assets/img/logo/html-5.png" class="skill__logo" alt="HTML">
                             <span class="skill__name">HTML</span>
@@ -120,8 +127,8 @@
                             <span class="skill__name">PhpStorm</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title">Langages de programmation</h3>
-                    <div class="skills__container">
+                    <h3 class="skill__category-title skill__category-title__mobile">Langages de programmation</h3>
+                    <div class="skills__container skills_prog">
                         <div class="skill">
                             <img src="assets/img/logo/python.png" class="skill__logo" alt="Python">
                             <span class="skill__name">Python</span>
@@ -135,8 +142,8 @@
                             <span class="skill__name">C++</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title">Bases de données</h3>
-                    <div class="skills__container">
+                    <h3 class="skill__category-title skill__category-title__mobile">Bases de données</h3>
+                    <div class="skills__container skills_db">
                         <div class="skill">
                             <img src="assets/img/logo/oracle.png" class="skill__logo" alt="Oracle">
                             <span class="skill__name">Oracle</span>
@@ -154,8 +161,8 @@
                             <span class="skill__name">DataGrip</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title">Systèmes et Réseaux</h3>
-                    <div class="skills__container">
+                    <h3 class="skill__category-title skill__category-title__mobile">Systèmes et Réseaux</h3>
+                    <div class="skills__container skills_sys">
                         <div class="skill">
                             <img src="assets/img/logo/linux.png" class="skill__logo" alt="Linux">
                             <span class="skill__name">Linux</span>
@@ -177,8 +184,8 @@
                             <span class="skill__name">Cisco Packet Tracer</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title">Outils</h3>
-                    <div class="skills__container">
+                    <h3 class="skill__category-title skill__category-title__mobile">Outils</h3>
+                    <div class="skills__container skills_tools">
                         <div class="skill">
                             <img src="assets/img/logo/figma.png" class="skill__logo" alt="Figma">
                             <span class="skill__name">Figma</span>
@@ -344,5 +351,6 @@
 
         <script src="assets/script/burger.js"></script>
         <script src="assets/script/header-scroll.js"></script>
+        <script src="assets/script/afficheSkills.js"></script>
     </body>
 </html>
