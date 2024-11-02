@@ -71,6 +71,7 @@
 
 .project__stack {
     display: flex;
+    margin-top: auto;
 }
 
 .stack__title {
