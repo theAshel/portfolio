@@ -34,7 +34,7 @@
     transform: translateY(-3px);
 }
 
-.project__card:not(:last-child) {
+.projects__section > a:not(:last-child) {
     margin-bottom: 25px;
 }
 
@@ -84,12 +84,50 @@
     flex-wrap: wrap;
     color: #FF4F81;
     text-shadow: 
-        0 0 1px #FF4F81,       /* Ombre légère */
-        0 0 2px #FF4F81,      /* Luminosité principale */
-        0 0 4px #FF4F81,      /* Effet éclatant */
-        0 0 1px #FF218A      /* Éclat plus prononcé */
+        0 0 1px #FF4F81,
+        0 0 2px #FF4F81,
+        0 0 4px #FF4F81,
+        0 0 1px #FF218A
 }
 
 .stack {
     white-space: nowrap;
+}
+
+@media (min-width: 650px) {
+    .projects__section > a {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects__section > a:nth-child(odd) > .project__card {
+        flex-direction: row-reverse;
+    }
+
+    .projects__section > a:nth-child(even) > .project__card {
+        flex-direction: row;
+    }
+
+    
+
+    .project__image {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .projects__section > a {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects__section > a:nth-child(odd) > .project__card {
+        margin-left: 80px;
+    }
+
+    .projects__section > a:nth-child(even) > .project__card {
+        margin-right: 80px;
+    }
 }
