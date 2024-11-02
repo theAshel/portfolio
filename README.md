@@ -9,7 +9,7 @@ Welcome to the Git repository of my portfolio! This project showcases my technic
 
 ## Progression
 
-CSS design for mobile done. Tablet and Desktop display is yet to do.
+CSS + HTML done ! I will add JavaScript to make the site more dynamic.
 
 ## Stack
 
