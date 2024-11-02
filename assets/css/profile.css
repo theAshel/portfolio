@@ -58,8 +58,17 @@
     padding-top: 70px;
     position: relative;
     z-index: 2;
-    color: #dfe4fa;
+    color: #ecedff;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+}
+
 .profile__pre-name {
     font-size: 1rem;
 }
@@ -85,7 +94,7 @@
 }
 
 .profile__description > span {
-    color: #A66CFF;
+    color: #b9c6ff;
     text-shadow: 0 0 1px #4E6EFF, 0 0 6px #4E6EFF, 0 0 9px #A66CFF;
 }
 
@@ -109,6 +118,42 @@
 .download-cv__button:hover {
     border: 2px solid #4e86ff;
     color: #4e86ff;
+    text-shadow: 0 0 1px #4E6EFF, 0 0 6px #4E6EFF, 0 0 9px #A66CFF;
     transform: scale(1.05);
     background: #4e86ff44;
+}
+
+@media  (min-width: 1000px) {
+    .profile__content {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .profile__info {
+        padding-top: 20px;
+    }
+
+    .profile__pre-name {
+        font-size: 1.2rem;
+    }
+    
+    .profile__name {
+        font-size: 2.8rem;
+    }
+    
+    .profile__title {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    
+    .profile__description {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    
+    .download-cv__button {
+        padding: 7px 30px;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
 }

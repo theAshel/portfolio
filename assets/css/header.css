@@ -3,6 +3,7 @@
     height: 75px;
     width: 100vw;
     padding: 20px;
+    padding-right: 40px;
     font-size: 2rem;
     position: fixed;
     z-index: 1000;
@@ -72,11 +73,25 @@ nav {
     }
 
     .nav__list {
+        font-family: 'Montserrat', sans-serif;
         display: flex;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-left: auto;
         gap: 20px;
-        color: #F0F0F0;
+        color: #4E6EFF;
+        text-shadow: 
+            0 0 1px #4E6EFF,
+            0 0 9px #4E6EFF,
+            0 0 9px #A66CFF;
+    }
+
+    .nav__list > li {
+        transition: 0.2s ease;
+    }
+    
+    .nav__list > li:hover {
+        color: #dbdeeb;
+        transform: translateY(-1.5px);
     }
 
     #burger {

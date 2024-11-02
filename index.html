@@ -7,17 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio de Hoang Long Pham.">
         <meta name="authors" content="Hoang Long PHAM">
+        <link rel="icon" href="assets/img/favicon/favicon.png" type="image/png">
 
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <link href="assets/css/fonts.css" rel="stylesheet" />
-        <link href="assets/css/header.css" rel="stylesheet" />
-        <link href="assets/css/footer.css" rel="stylesheet" />
-        <link href="assets/css/profile.css" rel="stylesheet" />
-        <link href="assets/css/about.css" rel="stylesheet" />
-        <link href="assets/css/skills.css" rel="stylesheet" />
-        <link href="assets/css/projects.css" rel="stylesheet" />
-        <link href="assets/css/resume.css" rel="stylesheet" />
-        <link href="assets/css/contact.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" href="assets/css/profile.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/skills.css">
+        <link rel="stylesheet" href="assets/css/projects.css">
+        <link rel="stylesheet" href="assets/css/resume.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
@@ -28,7 +29,7 @@
                 </div>
                 <nav>
                     <ul class="nav__list">
-                        <li><a href="#profile">Accueil</a></li>
+                        <li><a href="/">Accueil</a></li>
                         <li><a href="#about">À propos</a></li>
                         <li><a href="#skills">Compétences</a></li>
                         <li><a href="#projects">Projets</a></li>
@@ -44,7 +45,7 @@
                     <i class="fa-solid fa-xmark" id="xmark-close-menu"></i>
                     <div class="menu__list-container">
                         <ul>
-                            <li><a href="#profile">Accueil</a></li>
+                            <li><a href="/">Accueil</a></li>
                             <li><a href="#about">À propos</a></li>
                             <li><a href="#skills">Compétences</a></li>
                             <li><a href="#projects">Projets</a></li>
@@ -60,31 +61,35 @@
             <section class="profile__section" id="profile">
                 <div class="profile__content">
                     <img src="assets/img/picture/chad.jpg" id="main-picture" alt="My picture" />
-                    <span class="profile__pre-name">Salut, je suis</span>
-                    <h1 class="profile__name">Hoang Long Pham.</h1>
-                    <h2 class="profile__title">Étudiant en 2e année de BUT Informatique.</h2>
-                    <p class="profile__description">Actuellement étudiant à <span>l'IUT de Reims</span>, j'ai 22 ans et j'aime le développement et les nouvelles technologies</p>
-                    <p class="profile__status">En recherche d'un stage en développement web de 8 semaines minimum à partir du 7 avril 2025.</p>
-                    <a href="assets/files/CV_Hoang-Long_PHAM.pdf" download>
-                        <button class="download-cv__button">Télécharger mon CV</button>
-                    </a>
+                    <div class="profile__info">
+                        <span class="profile__pre-name">Salut, je suis</span>
+                        <h1 class="profile__name">Hoang Long Pham.</h1>
+                        <h2 class="profile__title">Étudiant en 2e année de BUT Informatique.</h2>
+                        <p class="profile__description">Actuellement étudiant à <span>l'IUT de Reims</span>, j'ai 22 ans et j'aime le développement et les nouvelles technologies</p>
+                        <p class="profile__status">En recherche d'un stage en développement web de 8 semaines minimum à partir du 7 avril 2025.</p>
+                        <a href="assets/files/CV_Hoang-Long_PHAM.pdf" download>
+                            <button class="download-cv__button">Télécharger mon CV</button>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="content">
                 <section class="about__section" id="about">
                     <h2 class="about__title">À propos de moi</h2>
-                    <p class="about__paragraph">
-                        Salut ! Je m'appelle Hoang Long Pham et j'ai 22 ans. Je suis étudiant en 2e année de BUT Informatique à l'IUT de Reims.
-                    </p>
-                    <p class="about__paragraph">
-                        J'ai débuté mes études supérieures par une Licence de Mathématiques à l'URCA, où j'ai découvert la programmation.
-                        Cette discipline a éveillé ma curiosité, car elle me demande à la fois d'être logique pour résoudre des problèmes et créatif pour concevoir de nouvelles idées.
-                        Finalement, j'ai décidé de me réorienter vers l'informatique, et aujourd'hui, je suis passionné par le développement et les nouvelles technologies.
-                    </p>
-                    <p class="about__paragraph">
-                        En dehors de l'informatique, j'adore faire plein de choses comme jouer de l'instrument ! J'ai pratiqué 8 ans de piano et 6 ans de saxophone
-                        au CRD de Charleville-Mézières. Je suis également fan de jeux vidéo ; jeux compétitifs, jeux solo, on peut me considérer comme un joueur multigaming.
-                    </p>
+                    <div class="about__content">
+                        <p class="about__paragraph">
+                            Salut ! Je m'appelle Hoang Long Pham et j'ai 22 ans. Je suis étudiant en 2e année de BUT Informatique à l'IUT de Reims.
+                        </p>
+                        <p class="about__paragraph">
+                            J'ai débuté mes études supérieures par une Licence de Mathématiques à l'URCA, où j'ai découvert la programmation.
+                            Cette discipline a éveillé ma curiosité, car elle me demande à la fois d'être logique pour résoudre des problèmes et créatif pour concevoir de nouvelles idées.
+                            Finalement, j'ai décidé de me réorienter vers l'informatique, et aujourd'hui, je suis passionné par le développement et les nouvelles technologies.
+                        </p>
+                        <p class="about__paragraph">
+                            En dehors de l'informatique, j'adore faire plein de choses comme jouer de l'instrument ! J'ai pratiqué 8 ans de piano et 6 ans de saxophone
+                            au CRD de Charleville-Mézières. Je suis également fan de jeux vidéo ; jeux compétitifs, jeux solo, on peut me considérer comme un joueur multigaming.
+                        </p>
+                    </div>
                 </section>
                 <section class="skills__section" id="skills">
                     <h2 class="skills__title">Compétences</h2>
@@ -259,72 +264,76 @@
                 </section>
                 <section class="resume__section" id="resume">
                     <h2 class="resume__title">Mon parcours</h2>
-                    <div class="resume__data">
-                        <h3 class="resume__category">Parcours scolaire</h3>
-                        <div class="resume__item">
-                            <h4 class="resume__subtitle">BUT Informatique | Parcours Réalisation d'applications spé. C++</h4>
-                            <p class="resume__place">IUT de Reims</p>
-                            <p class="resume__date">Septembre 2023 - Aujourd'hui</p>
-                            <p class="resume__description">
-                                Réalisant que l'alternance n'était pas encore faite pour moi, je décide de réintégrer un cursus universitaire via le BUT Informatique,
-                                Il me permet de renforcer mes connaissances, et de mieux me préparer pour le monde professionnel.
-                            </p>
+                    <div class="resume__content">
+                        <div class="resume__data">
+                            <h3 class="resume__category">Parcours scolaire</h3>
+                            <div class="resume__item">
+                                <h4 class="resume__subtitle">BUT Informatique | Parcours Réalisation d'applications spé. C++</h4>
+                                <p class="resume__place">IUT de Reims</p>
+                                <p class="resume__date">Septembre 2023 - Aujourd'hui</p>
+                                <p class="resume__description">
+                                    Réalisant que l'alternance n'était pas encore faite pour moi, je décide de réintégrer un cursus universitaire via le BUT Informatique,
+                                    Il me permet de renforcer mes connaissances, et de mieux me préparer pour le monde professionnel.
+                                </p>
+                            </div>
+                            <div class="resume__item">
+                                <h4 class="resume__subtitle">Bachelor Informatique | 1ère année</h4>
+                                <p class="resume__place">École Supérieure de Génie Informatique - Paris</p>
+                                <p class="resume__date">Septembre 2022 - Juillet 2023</p>
+                                <p class="resume__description">
+                                    Première année dans une formation en alternance durant laquelle j'apprends les bases
+                                    de l'informatique : web, réseau, bases de données... Une année où j'ai encore appris énormément.
+                                </p>
+                            </div>
+                            <div class="resume__item">
+                                <h4 class="resume__subtitle">Piscine 42</h4>
+                                <p class="resume__place">42 - Paris</p>
+                                <p class="resume__date">Mars 2022 - Avril 2022</p>
+                                <p class="resume__description">
+                                    Dans le but de découvrir plus en détail la programmation et vivre de nouvelles expériences, j'ai participé à la Piscine de mars 2022 à Paris.
+                                    J'y ai appris les bases de la programmation en C, du bash mais j'ai surtout rencontré beaucoup de personnes, ce qui a rendu l'expérience inoubliable !
+                                </p>
+                            </div>
                         </div>
-                        <div class="resume__item">
-                            <h4 class="resume__subtitle">Bachelor Informatique | 1ère année</h4>
-                            <p class="resume__place">École Supérieure de Génie Informatique - Paris</p>
-                            <p class="resume__date">Septembre 2022 - Juillet 2023</p>
-                            <p class="resume__description">
-                                Première année dans une formation en alternance durant laquelle j'apprends les bases
-                                de l'informatique : web, réseau, bases de données... Une année où j'ai encore appris énormément.
-                            </p>
-                        </div>
-                        <div class="resume__item">
-                            <h4 class="resume__subtitle">Piscine 42</h4>
-                            <p class="resume__place">42 - Paris</p>
-                            <p class="resume__date">Mars 2022 - Avril 2022</p>
-                            <p class="resume__description">
-                                Dans le but de découvrir plus en détail la programmation et vivre de nouvelles expériences, j'ai participé à la Piscine de mars 2022 à Paris.
-                                J'y ai appris les bases de la programmation en C, du bash mais j'ai surtout rencontré beaucoup de personnes, ce qui a rendu l'expérience inoubliable !
-                            </p>
-                        </div>
-                    </div>
-                    <div class="resume__data">
-                        <h3 class="resume__category">Parcours professionnel</h3>
-                        <div class="resume__item">
-                            <h4 class="resume__subtitle">Technicien en traitement d'images dentaires</h4>
-                            <p class="resume__place">BOVO Predict - Saint-Mandé (remote)</p>
-                            <p class="resume__date">Juillet 2024 - Août 2024</p>
-                            <p class="resume__description">
-                                Analyse de CBCT pour l'extraction de coupes sagittales avec le logiciel <span>ImageJ</span>.<br/>
-                                Écriture d'un script Python automatisant la découpe d'images de coupes sagittales issues de CBCT, avec détection du nombre de coupes, tri et classement dans les dossiers correspondants.
-                            </p>
-                        </div>
-                        <div class="resume__item">
-                            <h4 class="resume__subtitle">Alternant Développeur Front-End</h4>
-                            <p class="resume__place">ValueMyCar - Rambouillet (remote)</p>
-                            <p class="resume__date">Décembre 2022 - Mai 2023</p>
-                            <p class="resume__description">
-                                Mon alternance lors de mon année à l'ESGI est ma première expérience professionnelle dans l'informatique, mais également dans le développement web. J'y ai acquis de bonnes bases en <span>HTML</span>, <span>CSS</span>
-                                et y ai découvert <span>JavaScript</span> et <span>Vue.js</span>. Je développais des composants Vue.js, validés par des tests unitaires.
-                            </p>
+                        <div class="resume__data">
+                            <h3 class="resume__category">Parcours professionnel</h3>
+                            <div class="resume__item">
+                                <h4 class="resume__subtitle">Technicien en traitement d'images dentaires</h4>
+                                <p class="resume__place">BOVO Predict - Saint-Mandé (remote)</p>
+                                <p class="resume__date">Juillet 2024 - Août 2024</p>
+                                <p class="resume__description">
+                                    Analyse de CBCT pour l'extraction de coupes sagittales avec le logiciel <span>ImageJ</span>.<br/>
+                                    Écriture d'un script Python automatisant la découpe d'images de coupes sagittales issues de CBCT, avec détection du nombre de coupes, tri et classement dans les dossiers correspondants.
+                                </p>
+                            </div>
+                            <div class="resume__item">
+                                <h4 class="resume__subtitle">Alternant Développeur Front-End</h4>
+                                <p class="resume__place">ValueMyCar - Rambouillet (remote)</p>
+                                <p class="resume__date">Décembre 2022 - Mai 2023</p>
+                                <p class="resume__description">
+                                    Mon alternance lors de mon année à l'ESGI est ma première expérience professionnelle dans l'informatique, mais également dans le développement web. J'y ai acquis de bonnes bases en <span>HTML</span>, <span>CSS</span>
+                                    et y ai découvert <span>JavaScript</span> et <span>Vue.js</span>. Je développais des composants Vue.js, validés par des tests unitaires.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section class="contact__section" id="contact">
                     <h2 class="contact__title">Contactez-moi</h2>
-                    <a href="https://www.linkedin.com/in/hoanglong-pham/" class="contact__link">
-                        <img src="assets/img/logo/linkedin.png" class="contact__icon" id="linkedin-icon" src="LinkedIn Icon" />
-                        <p class="contact__content">LinkedIn</p>
-                    </a>
-                    <a href="https://github.com/theAshel" class="contact__link">
-                        <img src="assets/img/logo/github.png" class="contact__icon" id="github-icon" src="Github Icon" />
-                        <p class="contact__content">Github</p>
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hoanglong.pham902@gmail.com" target="_blank" class="contact__link">
-                        <img src="assets/img/logo/email.png" class="contact__icon" id="mail-icon" src="Mail Icon" />
-                        <p class="contact__content">Email</p>
-                    </a>
+                    <div class="contact__buttons-container">
+                        <a href="https://www.linkedin.com/in/hoanglong-pham/" class="contact__link">
+                            <img src="assets/img/logo/linkedin.png" class="contact__icon" id="linkedin-icon" src="LinkedIn Icon" />
+                            <p class="contact__content">LinkedIn</p>
+                        </a>
+                        <a href="https://github.com/theAshel" class="contact__link">
+                            <img src="assets/img/logo/github.png" class="contact__icon" id="github-icon" src="Github Icon" />
+                            <p class="contact__content">Github</p>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hoanglong.pham902@gmail.com" target="_blank" class="contact__link">
+                            <img src="assets/img/logo/email.png" class="contact__icon" id="mail-icon" src="Mail Icon" />
+                            <p class="contact__content">Email</p>
+                        </a>
+                    </div>
                 </section>
             </section>
         </main>

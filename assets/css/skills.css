@@ -55,3 +55,29 @@
     height: 84px;
     border-radius: 7px;
 }
+
+@media (min-width: 600px) {
+    .skills__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .skills__container {
+        width: 750px;
+    }
+
+    .skill__logo {
+        width: 105px;
+        height: 105px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .skills__container {
+        width: 900px;
+    }
+}

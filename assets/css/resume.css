@@ -19,10 +19,6 @@
     margin-bottom: 20px;
 }
 
-.resume__data {
-    margin-bottom: 30px;
-}
-
 .resume__category {
     color: #4E6EFF;
     text-shadow: 0 0 1px #4E6EFF, 0 0 2px #4E6EFF, 0 0 4px #A66CFF;
@@ -87,4 +83,34 @@
 .resume__description {
     font-size: 0.90rem;
     line-height: 1.35rem;
+}
+
+@media (max-width: 1200px) {
+    .resume__data:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 800px) {
+    .resume__section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .resume__section {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .resume__content {
+        display: flex;
+        gap: 40px;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
