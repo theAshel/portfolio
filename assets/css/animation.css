@@ -1,0 +1,35 @@
+.fade-in-1s {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-1-25s {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.25s ease-out, transform 1.25s ease-out;
+}
+
+.fade-in-1-5s {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-1-75s {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.75s ease-out, transform 1.75s ease-out;
+}
+
+.fade-in-up-0-9s {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -19,16 +19,17 @@
         <link rel="stylesheet" href="assets/css/projects.css">
         <link rel="stylesheet" href="assets/css/resume.css">
         <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/animation.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
     <body>
         <header class="header">
             <div class="navbar">
-                <div class="logo">
+                <div class="logo fade-in-up-0-9s">
                     <a class="header__logo" href="/">Hoang Long</a>
                 </div>
                 <nav>
-                    <ul class="nav__list">
+                    <ul class="nav__list fade-in-up-0-9s">
                         <li><a href="/">Accueil</a></li>
                         <li><a href="#about">À propos</a></li>
                         <li><a href="#skills">Compétences</a></li>
@@ -39,7 +40,7 @@
                 </nav>
                 <!-- menu burger -->
                 <div class="burger-icon">
-                    <i class="fa-solid fa-bars" id="burger"></i>
+                    <i class="fa-solid fa-bars fade-in-up-0-9s" id="burger"></i>
                 </div>
                 <div class="menu" id="menu_nav">
                     <i class="fa-solid fa-xmark" id="xmark-close-menu"></i>
@@ -60,23 +61,23 @@
         <main>
             <section class="profile__section" id="profile">
                 <div class="profile__content">
-                    <img src="assets/img/picture/chad.jpg" id="main-picture" alt="My picture" />
+                    <img src="assets/img/picture/chad.jpg" class="fade-in-1s" id="main-picture" alt="My picture" />
                     <div class="profile__info">
-                        <span class="profile__pre-name">Salut, je suis</span>
-                        <h1 class="profile__name">Hoang Long Pham.</h1>
-                        <h2 class="profile__title">Étudiant en 2e année de BUT Informatique.</h2>
-                        <p class="profile__description">Actuellement étudiant à <span>l'IUT de Reims</span>, j'ai 22 ans et j'aime le développement et les nouvelles technologies</p>
-                        <p class="profile__status">En recherche d'un stage en développement web de 8 semaines minimum à partir du 7 avril 2025.</p>
+                        <span class="profile__pre-name fade-in-1s">Salut, je suis</span>
+                        <h1 class="profile__name fade-in-1s">Hoang Long Pham.</h1>
+                        <h2 class="profile__title fade-in-1-25s">Étudiant en 2e année de BUT Informatique.</h2>
+                        <p class="profile__description fade-in-1-5s">Actuellement étudiant à <span>l'IUT de Reims</span>, j'ai 22 ans et j'aime le développement et les nouvelles technologies</p>
+                        <p class="profile__status fade-in-1-5s">En recherche d'un stage en développement web de 8 semaines minimum à partir du 7 avril 2025.</p>
                         <a href="assets/files/CV_Hoang-Long_PHAM.pdf" download>
-                            <button class="download-cv__button">Télécharger mon CV</button>
+                            <button class="download-cv__button fade-in-1-75s">Télécharger mon CV</button>
                         </a>
                     </div>
                 </div>
             </section>
             <section class="content">
                 <section class="about__section" id="about">
-                    <h2 class="about__title">À propos de moi</h2>
-                    <div class="about__content">
+                    <h2 class="about__title fade-in-1s">À propos de moi</h2>
+                    <div class="about__content fade-in-1-25s">
                         <p class="about__paragraph">
                             Salut ! Je m'appelle Hoang Long Pham et j'ai 22 ans. Je suis étudiant en 2e année de BUT Informatique à l'IUT de Reims.
                         </p>
@@ -92,15 +93,15 @@
                     </div>
                 </section>
                 <section class="skills__section" id="skills">
-                    <h2 class="skills__title">Compétences</h2>
-                    <div class="container__skill__category-title__desktop">
+                    <h2 class="skills__title fade-in-1s">Compétences</h2>
+                    <div class="container__skill__category-title__desktop fade-in-1s">
                         <h3 class="skill__category-title skill__category-title__desktop active-title" onclick="afficheSkills('skills_web', this)">Développement Web</h3>
                         <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_prog', this)">Langages de programmation</h3>
                         <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_db', this)">Bases de données</h3>
                         <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_sys', this)">Systèmes et Réseaux</h3>
                         <h3 class="skill__category-title skill__category-title__desktop" onclick="afficheSkills('skills_tools', this)">Outils</h3>
                     </div>
-                    <h3 class="skill__category-title skill__category-title__mobile">Développement Web</h3>
+                    <h3 class="skill__category-title skill__category-title__mobile fade-in-1s">Développement Web</h3>
                     <div class="skills__container skills_web active">
                         <div class="skill">
                             <img src="assets/img/logo/html-5.png" class="skill__logo" alt="HTML">
@@ -127,7 +128,7 @@
                             <span class="skill__name">PhpStorm</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title skill__category-title__mobile">Langages de programmation</h3>
+                    <h3 class="skill__category-title skill__category-title__mobile fade-in-1s">Langages de programmation</h3>
                     <div class="skills__container skills_prog">
                         <div class="skill">
                             <img src="assets/img/logo/python.png" class="skill__logo" alt="Python">
@@ -142,7 +143,7 @@
                             <span class="skill__name">C++</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title skill__category-title__mobile">Bases de données</h3>
+                    <h3 class="skill__category-title skill__category-title__mobile fade-in-1s">Bases de données</h3>
                     <div class="skills__container skills_db">
                         <div class="skill">
                             <img src="assets/img/logo/oracle.png" class="skill__logo" alt="Oracle">
@@ -161,7 +162,7 @@
                             <span class="skill__name">DataGrip</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title skill__category-title__mobile">Systèmes et Réseaux</h3>
+                    <h3 class="skill__category-title skill__category-title__mobile fade-in-1s">Systèmes et Réseaux</h3>
                     <div class="skills__container skills_sys">
                         <div class="skill">
                             <img src="assets/img/logo/linux.png" class="skill__logo" alt="Linux">
@@ -184,7 +185,7 @@
                             <span class="skill__name">Cisco Packet Tracer</span>
                         </div>
                     </div>
-                    <h3 class="skill__category-title skill__category-title__mobile">Outils</h3>
+                    <h3 class="skill__category-title skill__category-title__mobile fade-in-1s">Outils</h3>
                     <div class="skills__container skills_tools">
                         <div class="skill">
                             <img src="assets/img/logo/figma.png" class="skill__logo" alt="Figma">
@@ -205,9 +206,9 @@
                     </div>
                 </section>
                 <section class="projects__section" id="projects">
-                    <h2 class="projects__title">Projets</h2>
+                    <h2 class="projects__title fade-in-1s">Projets</h2>
                     <a href="https://github.com/theAshel/prioritizr" target="_blank">
-                        <div class="project__card">
+                        <div class="project__card fade-in-1s">
                             <img src="assets/img/projects/prioritizr.png" class="project__image" alt="Image projet">
                             <div class="project__info">
                                 <h3 class="project__title">Prioritizr</h3>
@@ -228,7 +229,7 @@
                         </div>
                     </a>
                     <a href="https://github.com/theAshel/php-crud-tvshow" target="_blank">
-                        <div class="project__card">
+                        <div class="project__card fade-in-1s">
                             <img src="assets/img/projects/crud-tvshow.png" class="project__image" alt="Image projet">
                             <div class="project__info">
                                 <h3 class="project__title">Application Web CRUD : séries télévisées</h3>
@@ -250,7 +251,7 @@
                         </div>
                     </a>
                     <a href="https://github.com/theAshel/SAE_labyrinthes" target="_blank">
-                        <div class="project__card">
+                        <div class="project__card fade-in-1s">
                             <img src="assets/img/projects/maze.png" class="project__image" alt="Image projet">
                             <div class="project__info">
                                 <h3 class="project__title">Générateur et solveur de labyrinthes</h3>
@@ -270,9 +271,9 @@
                     </a>
                 </section>
                 <section class="resume__section" id="resume">
-                    <h2 class="resume__title">Mon parcours</h2>
+                    <h2 class="resume__title fade-in-1s">Mon parcours</h2>
                     <div class="resume__content">
-                        <div class="resume__data">
+                        <div class="resume__data fade-in-1s">
                             <h3 class="resume__category">Parcours scolaire</h3>
                             <div class="resume__item">
                                 <h4 class="resume__subtitle">BUT Informatique | Parcours Réalisation d'applications spé. C++</h4>
@@ -302,7 +303,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="resume__data">
+                        <div class="resume__data fade-in-1s">
                             <h3 class="resume__category">Parcours professionnel</h3>
                             <div class="resume__item">
                                 <h4 class="resume__subtitle">Technicien en traitement d'images dentaires</h4>
@@ -326,17 +327,17 @@
                     </div>
                 </section>
                 <section class="contact__section" id="contact">
-                    <h2 class="contact__title">Contactez-moi</h2>
+                    <h2 class="contact__title fade-in-1s">Contactez-moi</h2>
                     <div class="contact__buttons-container">
-                        <a href="https://www.linkedin.com/in/hoanglong-pham/" class="contact__link">
+                        <a href="https://www.linkedin.com/in/hoanglong-pham/" class="contact__link fade-in-1s">
                             <img src="assets/img/logo/linkedin.png" class="contact__icon" id="linkedin-icon" src="LinkedIn Icon" />
                             <p class="contact__content">LinkedIn</p>
                         </a>
-                        <a href="https://github.com/theAshel" class="contact__link">
+                        <a href="https://github.com/theAshel" class="contact__link fade-in-1-25s">
                             <img src="assets/img/logo/github.png" class="contact__icon" id="github-icon" src="Github Icon" />
                             <p class="contact__content">Github</p>
                         </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hoanglong.pham902@gmail.com" target="_blank" class="contact__link">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hoanglong.pham902@gmail.com" target="_blank" class="contact__link fade-in-1-5s">
                             <img src="assets/img/logo/email.png" class="contact__icon" id="mail-icon" src="Mail Icon" />
                             <p class="contact__content">Email</p>
                         </a>
@@ -352,5 +353,6 @@
         <script src="assets/script/burger.js"></script>
         <script src="assets/script/header-scroll.js"></script>
         <script src="assets/script/afficheSkills.js"></script>
+        <script src="assets/script/fadeIn.js"></script>
     </body>
 </html>
