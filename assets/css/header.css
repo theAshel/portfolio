@@ -159,6 +159,10 @@ nav {
 
 .menu__list-container > ul > li {
     transition: 0.2s ease;
+    text-shadow: 
+            0 0 1px #4E6EFF,
+            0 0 9px #4E6EFF,
+            0 0 9px #A66CFF;
 }
 
 .menu__list-container > ul > li:hover {
